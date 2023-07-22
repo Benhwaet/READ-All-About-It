@@ -1,21 +1,26 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+//function renderLicenseBadge(license) {}
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {}
+// // TODO: Create a function that returns the license link
+// // If there is no license, return an empty string
+// function renderLicenseLink(license) {}
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {}
+// // TODO: Create a function that returns the license section of README
+// // If there is no license, return an empty string
+// function renderLicenseSection(license) {}
+const sections = ['title', 'installation', 'usage', 'image', 'credits', 'license', 
+'badgeUrl', 'features', 'contribute', 'tests'];
+
+const allSections = [...sections]
+
 
 // TODO: Create a function to generate markdown for README
-function generateMarkdown(data) {
-  return `# ${data.title}
+const generateREADME = (allSections) =>
+ `# ${title}
 
   ## Description
-  ${data.description}
+  ${description}
   
   ## Table of Content
   
@@ -26,38 +31,38 @@ function generateMarkdown(data) {
   
   ## Installation
   
-  ${data.installation}
+  ${installation}
   
   ## Usage
 
-  ${data.usage}
+  ${usage}
 
-  ${data.image}
+  ${image}
 
   ## Credits
 
-  ${data.credits}
+  ${credits}
 
   ## License
 
-  ${data.license}
+  ${license}
 
   ## Badges
 
-  ![image](${data.BadgeURL})
+  ![image](${badgeUrl})
 
   ## Features
 
-  ${data.features}
+  ${features}
 
   ## Contribute
 
-  ${data.contribute}
+  ${contribute}
 
   ## Tests
 
-  ${data.tests}
+  ${tests}
 `;
-}
+console.log(allSections);
 
-module.exports = generateMarkdown;
+module.exports = { generateREADME };
