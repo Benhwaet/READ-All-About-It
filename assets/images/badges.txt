@@ -1,0 +1,26 @@
+From <https://github.com/alexandresanlim/Badges4-README.md-Profile>
+
+Javascript
+https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E
+
+edX
+https://img.shields.io/badge/Edx-193A3E?style=for-the-badge&logo=edx&logoColor=white
+
+node.js
+https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white
+
+npm
+https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white
+
+json
+https://img.shields.io/badge/json-5E5C5C?style=for-the-badge&logo=json&logoColor=white
+
+prettier
+https://img.shields.io/badge/prettier-1A2C34?style=for-the-badge&logo=prettier&logoColor=F7BA3E
+
+ESLint
+https://img.shields.io/badge/eslint-3A33D1?style=for-the-badge&logo=eslint&logoColor=white
+
+macOS
+https://img.shields.io/badge/mac%20os-000000?style=for-the-badge&logo=apple&logoColor=white
+
