@@ -85,7 +85,7 @@ const promptUser = () => {
 // TODO: Create a function to write README file
 //from the mini project files "./09-NodeJS/01-Activities/28-Stu_Mini-Project/Main/bonus.js"
 const init = () => {
-  promptUser()``
+  promptUser()
     .then((answers) => writeFile("README.md", generateREADME(answers)))
     .then(() => console.log("SUCCESS!"))
     .catch((err) => console.error(err));
