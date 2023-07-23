@@ -1,12 +1,8 @@
 // Include packages needed for this application
 const inquirer = require("inquirer");
-const fs = require("fs");
 const { writeFile } = require("fs").promises;
-const licenses = require("./utils/licenses");
-// const questions = require('./utils/promptQuestions');
-// const generateREADME = require("./utils/generateMarkdown");
+const generateREADME = require("./utils/generateMarkdown");
 
-// Function to initialize app - taken from NodeJS mini-project code
 const promptUser = () => {
   return inquirer.prompt([
     {
@@ -53,7 +49,8 @@ const promptUser = () => {
         "Apache License 2.0",
         "MIT License",
         "The Unlicense",
-        "The Do What the Fuck You Want to Public License",
+        "WTFPL",
+        "None"
       ],
     },
     {
@@ -71,7 +68,6 @@ const promptUser = () => {
         valid = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email);
 
         if (valid) {
-          console.log("Great job");
           return true;
         } else {
           console.log(".  Please enter a valid email");
@@ -82,63 +78,14 @@ const promptUser = () => {
   ]);
 };
 
-// TODO: Create a function to generate markdown for README
-const generateREADME = ({title, description, installation, usage, image, 
-    contribute, tests, license, username, email}) =>
-     `# ${title}
-    
-      ## Description
-    
-      ${description}
-    
-     ## Table of Content
-      
-      - [Installation](#installation)
-      - [Usage](#usage)
-      - [Contribute](#contribute)
-      - [Tests](#tests)
-      - [License](#license)
-      - [Questions](#questions)
-     
-      ## Installation
-      
-      ${installation}
-      
-      ## Usage
-    
-      ${usage}
-    
-      ${image}
-    
-      ## Contribute
-    
-      ${contribute}
-    
-      ## Tests
-    
-      ${tests}
-    
-      ## License
-    
-      ${license}
-    
-      ## Questions
-    
-      You can reach me through my GitHub or by e-mail 
-      if you have and questions or comments.
-      GitHub: <https://www.github.com/${username}>
-      e-mail: ${email}
-    `;
-    
-    
 // TODO: Create a function to write README file
 //from the mini project files "./09-NodeJS/01-Activities/28-Stu_Mini-Project/Main/bonus.js"
 const init = () => {
-  promptUser()
-    .then((answers) => writeFile("README.md", generateREADME(answers)))
-    .then(() => console.log("SUCCESS!"))
-    .catch((err) => console.error(err));
-};
+promptUser()
+  .then((answers) => writeFile('./assets/generatedREADMEs/READIT.md', generateREADME(answers)))
+  .then(() => console.log('Success!'))
+  .catch((err) => console.log(err))
+}
 
 // Function call to initialize app
 init();
