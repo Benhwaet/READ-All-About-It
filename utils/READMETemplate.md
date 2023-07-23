@@ -1,4 +1,4 @@
-# READ-All-About-It
+# Professional README Guide Template
 
 This template is copied from the Professional README Guide on <https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide>
 
