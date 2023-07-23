@@ -43,7 +43,7 @@ The validation code for the email entry was taken from the validate-email-inquir
 
 ## Contribute
 
-Anyone can contribute to the project by forking or cloning the repo. They will need to download the dependencies themselves, in this case Inquirer, and are able to push changed for approval.
+Anyone can contribute to the project by forking or cloning the repo. They will need to download the dependencies themselves, in this case Inquirer, and are able to push changes for approval.
 
 ## Tests
 
