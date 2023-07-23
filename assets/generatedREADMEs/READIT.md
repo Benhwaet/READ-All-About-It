@@ -2,7 +2,7 @@
 
 ## Description
 
-This example README is to introduce you to a television show which debuted in 1979. It's theme song is a treasure.
+This example README is to introduce you to a television show which debuted in 1979. Its theme song is a treasure.
 
 ## Table of Contents
 
@@ -38,7 +38,6 @@ C'mon and read all about it!
 The Do What the Fuck You Want to Public License
 
 <http://www.wtfpl.net/about>
-
 
 ## Questions
 

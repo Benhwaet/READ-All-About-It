@@ -216,10 +216,11 @@ ${renderLicenseSection(license)}
 
 ## Questions
 
-You can reach me through my GitHub or by e-mail 
+You can reach me through my GitHub or by email 
 if you have and questions or comments.
 
 GitHub: <https://www.github.com/${username}>
-e-mail: <${email}>`;
+
+email: <${email}>`;
 
 module.exports = generateREADME, renderLicenseSection;
