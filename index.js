@@ -50,7 +50,7 @@ const promptUser = () => {
         "MIT License",
         "The Unlicense",
         "WTFPL",
-        "None",
+        "None"
       ],
     },
     {
@@ -85,7 +85,7 @@ promptUser()
   .then((answers) => writeFile('./assets/generatedREADMEs/READIT.md', generateREADME(answers)))
   .then(() => console.log('Success!'))
   .catch((err) => console.log(err))
-};
+}
 
 // Function call to initialize app
 init();
