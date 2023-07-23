@@ -58,7 +58,7 @@ const questions = [
     message:
       "Please enter your email address to be contacted with user questions",
     //validate-email-inquirer.prompt gist from Amitabh-K/index.js
-    validate: (email) => {
+    validate: function (email) {
       valid = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email);
 
       if (valid) {

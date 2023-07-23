@@ -1,6 +1,5 @@
-const licenses = require('./utils/licenses.js');
-const questions = require('./utils/promptQuestions');
-
+const licenses = require('./licenses');
+const questions = require('./promptQuestions');
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 // License badge template from <https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba>
@@ -74,7 +73,7 @@ const renderLicenseLink = (license) => {
 
 // TODO: Create a function to generate markdown for README
 const generateREADME = ({title, description, installation, usage, image, 
-contribute, tests, license, username, email}) => {
+contribute, tests, license, username, email}) =>
  `# ${title}
 
   ## Description
@@ -118,8 +117,7 @@ contribute, tests, license, username, email}) => {
   if you have and questions or comments.
   GitHub: <https://www.github.com/${username}>
   e-mail: ${email}
-`};
+`;
 
-console.log(allSections);
 
 module.exports = { generateREADME };
