@@ -4,7 +4,7 @@
 
 This project is to learn more about NodeJS and the ways in which one can generate a file from the back-end. The application allows the user to answer a series of questions and then generate a Professional README file for their project through their CLI. The README then has the necessary sections and is editable for the user to add images and other content after it is generated.
 
-*Please note that most commits - 5 to 6 over the pas 12 hours and more - for this project were lost in an attempt to remove a large file from commit memory. The open issue in the repo summarize these lost commits.
+*Please note that most commits for this project - 5 to 6 over the course of 10-12 hours -  were lost in an attempt to remove a large video file from commit memory. The open issue in the repo summarizes these lost commits.*
 
 ## Table of Content
 
